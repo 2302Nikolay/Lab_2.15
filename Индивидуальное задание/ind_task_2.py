@@ -1,4 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import string
+
+"""
+Напишите программу, которая будет считывать список слов из
+файла и собирать статистику о том, в каком проценте слов используется каждая буква
+алфавита.
+
+"""
+
 if __name__ == "__main__":
     with open("ind2.txt", "r", encoding="utf-8") as txt:
         content = txt.readline().lower().replace(" ", "").replace(".", "")
